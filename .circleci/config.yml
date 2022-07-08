@@ -17,11 +17,10 @@ jobs:
     docker:
       image: python:3.7-alpine3.11
 
-    add_ssh_keys:
-      fingerprints: [12:a7:90:a2:03:c2:57:a6:28:79:2c:41:da:44:54:62]
-
     steps:
       - checkout:
+      - add_ssh_keys:
+          fingerprints: [12:a7:90:a2:03:c2:57:a6:28:79:2c:41:da:44:54:62]
       - run:
           name: Install ansible
           command: |
