@@ -12,6 +12,7 @@ Resources:
   ServerInstanceSecGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
+      GroupDescription: Allow communocation through port 22
       SecurityGroupIngress:
         IpProtocol: tcp
         FromPort: 22
