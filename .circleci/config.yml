@@ -30,7 +30,7 @@ jobs:
             ansible-playbook -i inventory main.yml
   smoke-test:
     docker:
-      - image:
+      - image: alpine:latest
     steps:
       - checkout
       - run:
