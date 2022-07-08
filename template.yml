@@ -6,13 +6,13 @@ Resources:
     Properties:
       SecurityGroups:
         - !Ref ServerInstanceSecGroup
-      InstanceType: t2.micro
+      InstanceType: t3.micro
       ImageId: ami-08d4ac5b634553e16
       KeyName: udacity
   ServerInstanceSecGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
-      SecurityGroupIngres:
+      SecurityGroupIngress:
         IpProtocol: tcp
         FromPort: 22
         ToPort: 22
