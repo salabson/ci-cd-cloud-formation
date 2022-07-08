@@ -34,7 +34,7 @@ jobs:
     steps:
       - checkout
       - run:
-        apk add --update curl
+          apk add --update curl
       - run:
           name: Run smoke test
           command: |
