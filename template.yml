@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: "Deloy aws server"
-Resource:
+Resources:
   ServerInstance:
     Type: AWS::EC2::Instance
     Properties:
