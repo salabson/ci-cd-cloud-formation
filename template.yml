@@ -5,10 +5,10 @@ Resource:
     Type: AWS::EC2::Instance
     Properties:
       - SecurityGroups:
-        !Ref ServerInstanceSecGroup
-      InstanceType: t2.micro
-      ImageId: ami-08d4ac5b634553e16
-      KeyName: udacity
+          !Ref ServerInstanceSecGroup
+        InstanceType: t2.micro
+        ImageId: ami-08d4ac5b634553e16
+        KeyName: udacity
   ServerInstanceSecGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
