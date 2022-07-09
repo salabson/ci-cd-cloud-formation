@@ -48,8 +48,6 @@ jobs:
 
 
 
-
-
 workflows:
   infrasructure-workflow:
     jobs:
@@ -57,6 +55,6 @@ workflows:
       #- configure-infrastructure
       - smoke-test:
           requires:
-            create-infrastructure
+            - create-infrastructure
 
   
