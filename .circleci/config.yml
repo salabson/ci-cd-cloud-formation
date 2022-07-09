@@ -32,9 +32,7 @@ jobs:
     docker:
       - image: alpine:latest
     steps:
-      - checkout
-      - run:
-          apk add --update curl
+      - run: apk add --update curl
       - run:
           name: Run smoke test
           command: |
